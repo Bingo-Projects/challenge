@@ -1,0 +1,130 @@
+.campaign-form__filters {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin-top: 2rem; }
+  .campaign-form__filters .normal-status {
+    margin-top: 1rem;
+    margin-left: 1.5rem; }
+
+.campaign-form__info {
+  margin-top: 2rem; }
+  .campaign-form__info--container {
+    display: flex;
+    font-size: 16px;
+    align-items: center;
+    margin-bottom: 1.2rem; }
+    .campaign-form__info--container .info-title {
+      text-transform: capitalize;
+      margin-right: 1.5rem; }
+    .campaign-form__info--container .info-text-box {
+      outline: 2px solid #db8e00;
+      outline-offset: 0px;
+      padding: 0 16px;
+      border-radius: 5px;
+      color: #7b5000;
+      font-weight: 500;
+      background: #ffe9c2; }
+  @media screen and (max-width: 760px) {
+    .campaign-form__info--container {
+      font-size: 16px; } }
+  @media screen and (max-width: 500px) {
+    .campaign-form__info--container {
+      display: none; } }
+
+.campaign-form__body {
+  margin-top: 3rem; }
+  .campaign-form__body .not-found {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .campaign-form__body .not-found i {
+      font-size: 50px;
+      margin-right: 2rem;
+      color: red; }
+    .campaign-form__body .not-found h2 {
+      color: #2196f3; }
+  .campaign-form__body .application__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    width: -webkit-fill-available; }
+    .campaign-form__body .application__container .application {
+      background: #dcf0ff;
+      padding: 1rem 1.4rem;
+      border-radius: 10px;
+      box-shadow: 0 0 3px #00195b82; }
+      .campaign-form__body .application__container .application__info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.5rem; }
+        .campaign-form__body .application__container .application__info--title {
+          font-size: 16px;
+          margin-right: 1rem;
+          min-width: max-content;
+          align-self: flex-start; }
+        .campaign-form__body .application__container .application__info--text {
+          font-size: 18px;
+          font-weight: 500;
+          color: #3f3f3f; }
+      .campaign-form__body .application__container .application__button {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 1.5rem 0 0.5rem;
+        gap: 2rem;
+        row-gap: 1rem; }
+        .campaign-form__body .application__container .application__button button {
+          font-size: 16px;
+          font-weight: 500;
+          padding: 5px 10px;
+          border-radius: 6px;
+          font-weight: 500;
+          color: white; }
+        .campaign-form__body .application__container .application__button--details {
+          outline: 2px solid #005049;
+          background: #009b8d; }
+        .campaign-form__body .application__container .application__button--reject {
+          outline: 2px solid #720200;
+          background: #ff3d3a; }
+  @media screen and (max-width: 760px) {
+    .campaign-form__body .not-found i {
+      font-size: 40px;
+      margin-right: 1.5rem; }
+    .campaign-form__body .not-found h2 {
+      font-size: 20px; } }
+  @media screen and (max-width: 1400px) {
+    .campaign-form__body .application__container {
+      grid-template-columns: 1fr; } }
+  @media screen and (max-width: 1180px) {
+    .campaign-form__body .application__container .application__info--title {
+      font-size: 15px; }
+    .campaign-form__body .application__container .application__info--text {
+      font-size: 16px; } }
+  @media screen and (max-width: 980px) {
+    .campaign-form__body .application__container {
+      grid-template-columns: 1fr; }
+      .campaign-form__body .application__container .application__info--title {
+        font-size: 17px; }
+      .campaign-form__body .application__container .application__info--text {
+        font-size: 19px; } }
+  @media screen and (max-width: 700px) {
+    .campaign-form__body .application__container .application__info--title {
+      font-size: 15px; }
+    .campaign-form__body .application__container .application__info--text {
+      font-size: 16px; }
+    .campaign-form__body .application__container .application__button button {
+      font-size: 16px; } }
+  @media screen and (max-width: 500px) {
+    .campaign-form__body {
+      margin-top: 3rem; } }
+  @media screen and (max-width: 490px) {
+    .campaign-form__body .application__container .application {
+      padding: 1rem; }
+    .campaign-form__body .application__container .application__info--title {
+      font-size: 13px; }
+    .campaign-form__body .application__container .application__info--text {
+      font-size: 14px; }
+    .campaign-form__body .application__container .application__button {
+      grid-template-columns: 1fr; } }

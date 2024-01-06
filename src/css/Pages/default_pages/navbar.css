@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto+Slab:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  background: #fff; }
+
+.navbar .holder {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  position: relative; }
+  @media screen and (max-width: 980px) {
+    .navbar .holder {
+      padding: 1rem; } }
+
+.navbar {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2); }
+
+.navbar__hamburger {
+  font-size: 33px;
+  display: none;
+  margin-right: 2rem;
+  color: #484848; }
+  .navbar__hamburger .black-screen {
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    transition: all 0.2s linear; }
+  .navbar__hamburger__menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    list-style: none;
+    text-transform: capitalize;
+    font-size: 17px;
+    width: fit-content;
+    max-width: 90vw;
+    height: 100vh;
+    z-index: 10;
+    background: #fff;
+    padding: 2rem 0;
+    transform: translateX(-200%);
+    transition: all 0.2s linear;
+    display: flex;
+    flex-direction: column; }
+    .navbar__hamburger__menu--link {
+      padding: 0.5rem 2rem;
+      text-align: start;
+      font-size: 15px;
+      min-width: max-content; }
+    .navbar__hamburger__menu hr {
+      margin: 0.8rem 0;
+      border-top: 1px solid #c7c7c7; }
+  .navbar__hamburger.active .black-screen {
+    z-index: 10;
+    display: block;
+    background: rgba(72, 72, 72, 0.5); }
+  .navbar__hamburger.active .navbar__hamburger__menu {
+    transform: translateX(0); }
+  @media screen and (max-width: 980px) {
+    .navbar__hamburger {
+      display: block; } }
+  @media screen and (max-width: 300px) {
+    .navbar__hamburger__menu--link {
+      padding: 0.5rem 1.5rem; } }
+
+.navbar__logo img {
+  width: 120px;
+  height: 40px;
+  object-fit: contain; }
+
+@media screen and (max-width: 980px) {
+  .navbar__logo {
+    margin: 0 auto; } }
+
+@media screen and (max-width: 410px) {
+  .navbar__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); } }
+
+.navbar__links {
+  list-style: none;
+  display: flex;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #484848;
+  margin-left: auto;
+  margin-right: 4rem; }
+  .navbar__links .red {
+    font-size: 15px;
+    font-weight: 500; }
+    .navbar__links .red:hover, .navbar__links .red.active {
+      background: #ffe9e9 !important;
+      color: #cf0300 !important; }
+  .navbar__links--link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 6px 15px;
+    transition: all 0.2s linear;
+    min-width: fit-content;
+    margin: 0 10px;
+    color: #484848; }
+    .navbar__links--link i {
+      font-weight: 900;
+      font-size: 27px;
+      margin-left: 5px;
+      transition: transform 0.2s linear; }
+    .navbar__links--link:hover, .navbar__links--link.active {
+      background: #ddf5ff;
+      color: #00a5ec; }
+    .navbar__links--link.space {
+      padding: 0 10px; }
+  @media screen and (max-width: 980px) {
+    .navbar__links {
+      display: none; } }
+
+.navbar__buttons {
+  display: flex;
+  justify-content: center; }
+  .navbar__buttons--login, .navbar__buttons--register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    transition: all 0.2s linear;
+    font-size: 15px;
+    height: 40px; }
+  .navbar__buttons--login {
+    border: 2px solid #00a5ec;
+    color: #00a5ec;
+    padding: 7px 20px;
+    margin-right: 2rem;
+    margin-right: 1rem; }
+    .navbar__buttons--login:hover {
+      background: #f5f5f5; }
+  .navbar__buttons--register {
+    border: 2px solid #00a5ec;
+    background: #00a5ec;
+    color: #fff;
+    padding: 0px 15px 1px 20px;
+    position: relative; }
+    .navbar__buttons--register i {
+      margin-left: 5px;
+      font-size: 30px;
+      transform: rotate(0deg);
+      position: relative;
+      transition: transform 0.2s linear; }
+    .navbar__buttons--register-menu {
+      background: #fff;
+      opacity: 0;
+      position: absolute;
+      bottom: calc(-100% + -4rem);
+      color: #484848;
+      text-align: left;
+      left: 0px;
+      box-shadow: 0px 0px 4px grey;
+      border: 1px solid rgba(0, 0, 0, 0.15);
+      min-width: 100%;
+      font-size: 14px;
+      font-family: "Poppins";
+      font-weight: 100;
+      z-index: -2;
+      transition: all 0.2s linear; }
+    .navbar__buttons--register-option {
+      padding: 10px 15px;
+      min-width: max-content;
+      display: block; }
+      .navbar__buttons--register-option:hover {
+        background: #ddf5ff;
+        color: #00a5ec; }
+    .navbar__buttons--register:hover i {
+      transform: rotate(-180deg);
+      top: -2px; }
+    .navbar__buttons--register:hover .navbar__buttons--register-menu {
+      z-index: 2;
+      opacity: 1; }
+  @media screen and (max-width: 980px) {
+    .navbar__buttons {
+      margin-left: auto; } }
+  @media screen and (max-width: 530px) {
+    .navbar__buttons .navbar__buttons--login {
+      display: none; } }
+  @media screen and (max-width: 410px) {
+    .navbar__buttons .navbar__buttons--register {
+      display: none; } }

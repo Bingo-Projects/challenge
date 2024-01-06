@@ -1,0 +1,149 @@
+.navbar-account {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  width: 100%;
+  border-bottom: 2px solid #adadad78;
+  position: relative; }
+  .navbar-account .navbar__logo {
+    display: inline-block;
+    margin: 0;
+    margin-left: 1rem; }
+    @media screen and (max-width: 650px) {
+      .navbar-account .navbar__logo {
+        margin: 0 auto; } }
+  @media screen and (max-width: 420px) {
+    .navbar-account {
+      padding-left: 1rem; } }
+
+.navbar-account__toggle {
+  padding: 16px;
+  position: relative;
+  left: -10px;
+  border-radius: 50%;
+  transition: all 0.2s linear;
+  margin-right: 0.5rem; }
+  .navbar-account__toggle .bar-line {
+    height: 5px;
+    width: 30px;
+    background: #2196f3;
+    border-radius: 20rem;
+    margin-bottom: 5px; }
+    .navbar-account__toggle .bar-line:last-child {
+      margin-bottom: 0px; }
+  .navbar-account__toggle:hover {
+    background: #d8eeffd4; }
+  @media screen and (max-width: 420px) {
+    .navbar-account__toggle {
+      padding: 10px; }
+      .navbar-account__toggle .bar-line {
+        height: 4px;
+        width: 27px; } }
+
+.navbar-account__text {
+  margin-right: auto;
+  font-size: 22px; }
+  @media screen and (max-width: 650px) {
+    .navbar-account__text {
+      display: none; } }
+
+.navbar-account__container {
+  margin-left: auto;
+  display: flex;
+  align-items: center; }
+  .navbar-account__container .dropdown-link {
+    font-size: 17px;
+    font-weight: 500;
+    margin-right: 5px;
+    position: relative;
+    padding: 5px 15px;
+    transition: all 0.2s linear;
+    min-width: fit-content; }
+    .navbar-account__container .dropdown-link:hover {
+      background: #f0f0f0; }
+      .navbar-account__container .dropdown-link:hover.red {
+        background: #ffeaea; }
+    .navbar-account__container .dropdown-link.profile {
+      color: #2196f3; }
+      .navbar-account__container .dropdown-link.profile:hover {
+        background: #eaf6ff; }
+  @media screen and (max-width: 430px) {
+    .navbar-account__container .dropdown-link {
+      font-size: 15px; } }
+
+.navbar-account__profile {
+  padding: 1rem 2rem 1rem;
+  background: #dcf0ff;
+  transition: all 0.2s linear;
+  border: 2px solid transparent;
+  position: relative;
+  cursor: default;
+  margin-left: auto; }
+  .navbar-account__profile--visible {
+    display: flex;
+    align-items: center; }
+    .navbar-account__profile--visible i {
+      font-size: 40px;
+      margin-right: 1rem;
+      color: #006cc1;
+      transition: all 0.2s linear; }
+    .navbar-account__profile--visible .profile-info {
+      margin-right: 2rem;
+      min-width: max-content; }
+      .navbar-account__profile--visible .profile-info--name {
+        font-size: 17px;
+        font-weight: bold; }
+      .navbar-account__profile--visible .profile-info--status {
+        font-size: 16px; }
+    .navbar-account__profile--visible .profile-img img {
+      height: 50px;
+      width: 50px;
+      object-fit: cover;
+      border-radius: 50%;
+      outline: 2px solid #2196f3; }
+  .navbar-account__profile .transparent-wrapper {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding-right: 1rem;
+    z-index: 1;
+    display: none; }
+  .navbar-account__profile--dropdown {
+    margin-top: 1rem;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    box-shadow: 0 0px 3px rgba(0, 0, 0, 0.41);
+    transition: opacity 0.5s linear;
+    overflow: hidden;
+    width: 100%; }
+    .navbar-account__profile--dropdown .dropdown-link {
+      font-size: 18px;
+      text-align: center;
+      padding: 10px;
+      cursor: pointer;
+      transition: background-color 0.1s linear;
+      color: black;
+      font-weight: 500; }
+      .navbar-account__profile--dropdown .dropdown-link:first-child {
+        border-bottom: 1px solid #cccccc; }
+      .navbar-account__profile--dropdown .dropdown-link:hover {
+        background-color: #f6f6f6; }
+  .navbar-account__profile:hover {
+    background: #c8e7ff;
+    border-color: #2196f3; }
+    .navbar-account__profile:hover .navbar-account__profile--visible i {
+      transform: rotate(180deg); }
+    .navbar-account__profile:hover .transparent-wrapper {
+      display: flex;
+      z-index: 3; }
+  @media screen and (max-width: 880px) {
+    .navbar-account__profile {
+      padding: 0.5rem 1rem; }
+      .navbar-account__profile .profile-info {
+        display: none; } }
+  @media screen and (max-width: 420px) {
+    .navbar-account__profile {
+      margin-left: auto; } }

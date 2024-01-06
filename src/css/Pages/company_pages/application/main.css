@@ -1,0 +1,192 @@
+.application--container__head {
+  padding: 0 2rem; }
+  .application--container__head--title {
+    font-size: 22px;
+    color: #1b2437; }
+
+.application--container .application {
+  max-width: 900px;
+  margin: 2rem auto;
+  width: 100%;
+  padding: 1rem; }
+  .application--container .application__details--head {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem; }
+  .application--container .application__details--name {
+    font-size: 20px;
+    color: #1b2437; }
+  .application--container .application__details--box.location {
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    color: #6f6f6f;
+    margin-top: 7px;
+    flex-wrap: wrap; }
+  .application--container .application__details--box.others {
+    display: grid;
+    margin-top: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+    row-gap: 10px;
+    align-items: center;
+    margin-bottom: 10px; }
+    @media screen and (max-width: 620px) {
+      .application--container .application__details--box.others {
+        grid-template-columns: 1fr 1fr; } }
+    @media screen and (max-width: 500px) {
+      .application--container .application__details--box.others {
+        grid-template-columns: 1fr; } }
+  .application--container .application__details--text {
+    font-weight: 500;
+    color: #565656;
+    display: flex;
+    align-items: center;
+    min-width: max-content; }
+    .application--container .application__details--text i {
+      font-size: 22px;
+      color: #017fe4;
+      margin-right: 10px; }
+  .application--container .application__details--profile img {
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    border-radius: 20rem;
+    outline: 4px solid #008dff;
+    outline-offset: 3px;
+    margin-left: 3rem; }
+    @media screen and (max-width: 700px) {
+      .application--container .application__details--profile img {
+        height: 90px;
+        width: 90px; } }
+  .application--container .application__details--headline {
+    border-top: 2px dashed #008dff;
+    padding: 1rem 0;
+    margin-top: 1rem;
+    font-size: 15px; }
+  .application--container .application__details--headline-view {
+    font-size: 13px;
+    font-weight: 500;
+    color: #008dff;
+    transition: all 0.2s linear;
+    position: relative;
+    padding: 3px 10px;
+    left: -10px; }
+    .application--container .application__details--headline-view:hover {
+      background-color: #a1d5ff; }
+  @media screen and (max-width: 580px) {
+    .application--container .application__details--head {
+      flex-direction: column-reverse; }
+    .application--container .application__details--profile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%; }
+      .application--container .application__details--profile img {
+        margin: 0;
+        margin-bottom: 2rem; } }
+  .application--container .application__heading {
+    margin-top: 2rem;
+    font-size: 18px;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 10px; }
+  .application--container .application__sub--text {
+    color: #3b3b3b;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.8;
+    margin-bottom: 1rem; }
+  .application--container .application__sub--heading {
+    font-size: 15px;
+    font-family: "Poppins", "Roboto", sans-serif;
+    margin-bottom: 10px;
+    font-weight: 500;
+    margin-top: 1rem;
+    color: #0061af;
+    margin-top: 2rem; }
+  .application--container .application__skills {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5rem;
+    flex-wrap: wrap; }
+    .application--container .application__skills--text {
+      margin-bottom: 1rem;
+      margin-right: 1rem;
+      min-width: fit-content;
+      background: #0790ff;
+      padding: 4px 15px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #ffffff;
+      border-radius: 4px; }
+  .application--container .application__box {
+    border: 2px solid #d0d0d0;
+    padding: 15px 15px;
+    margin-top: 2rem; }
+    .application--container .application__box.no-border {
+      border: 0;
+      padding: 0;
+      margin-top: 1rem; }
+    .application--container .application__box--title {
+      font-size: 15px;
+      color: #1b2437;
+      margin-bottom: 15px; }
+      .application--container .application__box--title .internship {
+        display: inline-block;
+        font-size: 13px;
+        font-weight: 500;
+        background: #008dff;
+        padding: 4px 10px;
+        color: white;
+        margin-right: 1rem; }
+      .application--container .application__box--title .job {
+        display: inline-block;
+        font-size: 13px;
+        font-weight: 500;
+        background: #ff3700;
+        padding: 4px 10px;
+        color: white;
+        margin-right: 1rem; }
+    .application--container .application__box__links {
+      display: flex;
+      width: fit-content;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: -1rem; }
+      .application--container .application__box__links a {
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        font-weight: 500;
+        text-decoration: underline;
+        color: #0061af;
+        margin-right: 2rem;
+        margin-bottom: 1rem; }
+        .application--container .application__box__links a i {
+          font-size: 20px;
+          margin-right: 8px;
+          color: #2e2e2e; }
+    .application--container .application__box--container {
+      display: flex;
+      align-items: flex-start;
+      margin: 10px 0; }
+      .application--container .application__box--container.no-margin {
+        margin: 0; }
+      .application--container .application__box--container--point {
+        font-size: 14px;
+        font-weight: 500;
+        color: #0790ff;
+        margin-right: 1rem; }
+      .application--container .application__box--container--text {
+        font-size: 14px;
+        font-weight: 500;
+        color: #414141; }
+      @media screen and (max-width: 480px) {
+        .application--container .application__box--container {
+          flex-direction: column; }
+          .application--container .application__box--container--point {
+            margin-bottom: 5px; } }
+  @media screen and (max-width: 650px) {
+    .application--container .application {
+      margin-top: 0; } }

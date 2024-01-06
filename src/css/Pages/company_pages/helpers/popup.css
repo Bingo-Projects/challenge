@@ -1,0 +1,94 @@
+.popup-blackscreen {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  left: 0;
+  height: 100vh;
+  background: #323232ba;
+  display: grid;
+  z-index: 6;
+  place-items: center; }
+
+.popup-box {
+  min-width: fit-content;
+  background: white;
+  box-shadow: 0 0 6px #434343;
+  padding: 1.5rem;
+  border-radius: 14px;
+  max-width: 400px;
+  width: 60vw; }
+  .popup-box .profile-field {
+    text-align: center; }
+    .popup-box .profile-field img {
+      width: 95px;
+      border-radius: 50%;
+      object-fit: contain;
+      border: 2px solid #017fe4;
+      margin-bottom: 1rem; }
+  .popup-box .text-fields {
+    display: grid; }
+    .popup-box .text-fields > input,
+    .popup-box .text-fields .pass-field {
+      outline: 2px solid #afafaf;
+      padding: 8px 13px;
+      border-radius: 6px; }
+    .popup-box .text-fields > input {
+      font-size: 16px;
+      margin-bottom: 1rem;
+      width: 100%; }
+    .popup-box .text-fields .pass-field {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem; }
+      .popup-box .text-fields .pass-field input {
+        font-size: 16px;
+        width: 100%; }
+      .popup-box .text-fields .pass-field i {
+        font-size: 20px;
+        display: flex;
+        color: #575757; }
+  .popup-box .img-field {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    margin-top: 0.5rem; }
+    .popup-box .img-field .upload-msg {
+      font-size: 16px; }
+    .popup-box .img-field .upload-btn {
+      background: #e1e1e1;
+      padding: 0 10px;
+      outline: 1px solid #afafaf;
+      border-radius: 3px; }
+    .popup-box .img-field input {
+      visibility: hidden;
+      position: absolute;
+      width: 0; }
+  @media screen and (max-width: 560px) {
+    .popup-box {
+      width: 90vw; } }
+
+.error {
+  font-size: 14px;
+  color: red;
+  margin-top: 1rem;
+  display: none; }
+  .error.active {
+    display: block; }
+
+.btns-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1rem;
+  gap: 1rem; }
+  .btns-container button {
+    font-size: 17px;
+    padding: 8px 0;
+    font-weight: 500;
+    border-radius: 6px; }
+  .btns-container .btns--create {
+    background: #008dff;
+    color: #ffffff;
+    font-weight: 500; }
+  .btns-container .btns--cancel {
+    background-color: #e4e4e4;
+    color: #000000; }

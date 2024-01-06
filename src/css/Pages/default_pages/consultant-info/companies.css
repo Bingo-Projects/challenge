@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto+Slab:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+.companies-carousel {
+  padding: 3rem 2rem; }
+  .companies-carousel * {
+    outline: none !important; }
+  .companies-carousel--heading {
+    text-align: center;
+    font-size: 40px;
+    color: #1b2437; }
+  .companies-carousel--description {
+    text-align: center;
+    margin: 0.5rem 0 3rem;
+    font-size: 18px;
+    color: #484848;
+    font-weight: 500; }
+  @media screen and (max-width: 600px) {
+    .companies-carousel--heading {
+      font-size: 35px; }
+    .companies-carousel--description {
+      font-size: 20px; } }
+  @media screen and (max-width: 420px) {
+    .companies-carousel--heading {
+      font-size: 30px; }
+    .companies-carousel--description {
+      font-size: 16px; } }
+
+.slick-slide img {
+  margin: 0 2rem;
+  width: 200px;
+  height: 90px;
+  object-fit: contain; }
+
+.slick-slide {
+  display: flex !important;
+  justify-content: center !important; }

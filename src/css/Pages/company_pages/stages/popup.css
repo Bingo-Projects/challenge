@@ -1,0 +1,6 @@
+.popup-box.section {
+  max-width: 530px; }
+  .popup-box.section .text-fields {
+    margin: 1rem 0 1.5rem; }
+    .popup-box.section .text-fields input {
+      margin-bottom: 0; }

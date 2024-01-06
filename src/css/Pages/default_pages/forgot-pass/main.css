@@ -1,0 +1,8 @@
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem;
+  min-height: 50vh; }
+  .form .form__input-box.margin-left {
+    margin-right: 0; }

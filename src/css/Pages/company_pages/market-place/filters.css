@@ -1,0 +1,22 @@
+.filters-mob {
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  background: #fcfcfc;
+  padding: 6px 15px 6px 6px;
+  border-radius: 5px;
+  border: 2px solid #d7d7d7;
+  cursor: pointer;
+  position: fixed;
+  z-index: 2; }
+
+.filters.market-place {
+  display: block;
+  width: 90vw;
+  min-width: fit-content;
+  max-width: 540px;
+  height: fit-content;
+  position: unset;
+  margin-right: 0; }
+  .filters.market-place .filters__heading i {
+    display: block; }

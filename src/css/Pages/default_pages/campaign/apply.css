@@ -1,0 +1,81 @@
+.apply-popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background: #0000004d;
+  align-items: center;
+  justify-content: center; }
+  .apply-popup .text-stats {
+    font-size: 14px;
+    font-weight: 500;
+    color: #5e5e5e;
+    margin-top: 10px;
+    width: fit-content;
+    margin-left: auto; }
+  .apply-popup__box {
+    background: white;
+    padding: 1.5rem;
+    border: 2px solid #5bb5ff;
+    box-shadow: 0px 0px 5px #017fe487;
+    width: 90vw;
+    max-height: 90vh;
+    max-width: 720px;
+    overflow-y: scroll; }
+    .apply-popup__box::-webkit-scrollbar {
+      width: 7px; }
+    .apply-popup__box::-webkit-scrollbar-track {
+      background: #f5f5f5; }
+    .apply-popup__box::-webkit-scrollbar-thumb {
+      background: #acacac; }
+    .apply-popup__box .apply-question {
+      display: grid;
+      margin-bottom: 1rem; }
+      .apply-popup__box .apply-question__title {
+        margin-bottom: 5px;
+        font-size: 16px; }
+      .apply-popup__box .apply-question__text {
+        margin-bottom: 13px;
+        font-size: 15px; }
+      .apply-popup__box .apply-question__answer {
+        border: 1px solid #797979;
+        font-size: 15px;
+        height: 120px;
+        font-weight: 500;
+        padding: 10px;
+        resize: none; }
+      .apply-popup__box .apply-question .error {
+        margin-top: 8px; }
+        .apply-popup__box .apply-question .error.visible {
+          display: block; }
+      .apply-popup__box .apply-question.coverletter .apply-question__answer {
+        height: 255px; }
+    .apply-popup__box .apply--submit {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      justify-content: center;
+      gap: 1rem 2rem;
+      margin-top: 2rem; }
+      .apply-popup__box .apply--submit button {
+        font-size: 16px;
+        font-weight: 600;
+        color: #008dff;
+        border: 2px solid #008dff;
+        padding: 10px 35px;
+        border-radius: 8px;
+        width: 100%; }
+      .apply-popup__box .apply--submit button.submit--btn {
+        background: #008dff;
+        color: white; }
+      @media screen and (max-width: 370px) {
+        .apply-popup__box .apply--submit {
+          grid-template-columns: 1fr; } }
+    @media screen and (max-width: 520px) {
+      .apply-popup__box {
+        max-height: 95vh;
+        width: 95vw;
+        padding: 1.5rem 1rem;
+        padding-bottom: 2rem; } }

@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto+Slab:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+.pricing {
+  background: #00a5eca6;
+  padding: 4rem 2rem; }
+  @media screen and (max-width: 450px) {
+    .pricing {
+      padding: 3rem 1rem; } }
+
+.pricing__head {
+  text-align: center;
+  margin-bottom: 2rem; }
+  .pricing__head--heading {
+    font-size: 40px;
+    margin-bottom: 1rem;
+    color: #0a0e15; }
+  .pricing__head--sub-heading {
+    font-size: 23px;
+    color: #626262;
+    font-weight: 500; }
+  @media screen and (max-width: 600px) {
+    .pricing__head--heading {
+      font-size: 35px; }
+    .pricing__head--sub-heading {
+      font-size: 20px; } }
+  @media screen and (max-width: 420px) {
+    .pricing__head--heading {
+      font-size: 30px; }
+    .pricing__head--sub-heading {
+      font-size: 18px; } }
+
+.pricing__body {
+  display: grid;
+  margin-top: 5rem;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  gap: 2rem; }
+  @media screen and (min-width: 1100px) {
+    .pricing__body {
+      grid-template-columns: 1fr 1fr 1fr; } }
+  @media screen and (max-width: 780px) {
+    .pricing__body {
+      grid-template-columns: 1fr; } }
+  @media screen and (max-width: 450px) {
+    .pricing__body {
+      margin-top: 3rem; } }
+
+.pricing__body__box {
+  width: fit-content;
+  background: #fff;
+  border-radius: 20px;
+  padding: 2rem 0;
+  box-shadow: 0 0 5px #005e86;
+  border: 3px solid #005e86; }
+  .pricing__body__box--head {
+    border-bottom: 3px dashed #005e86;
+    padding: 0 2rem 1rem;
+    margin-bottom: 1rem; }
+    .pricing__body__box--head .heading {
+      text-transform: capitalize;
+      color: #005e86;
+      font-size: 30px;
+      text-align: center; }
+      .pricing__body__box--head .heading i {
+        margin-right: 1rem; }
+    .pricing__body__box--head .description {
+      font-size: 15px;
+      color: #1b2437;
+      font-weight: 500;
+      margin: 1rem 0;
+      text-align: center; }
+    .pricing__body__box--head .price {
+      display: flex;
+      justify-content: center;
+      font-size: 35px;
+      color: #005951;
+      text-shadow: 1px 1px 1px #00f614; }
+  .pricing__body__box--body {
+    padding: 1rem 2rem 0; }
+    .pricing__body__box--body .description {
+      color: #005e86;
+      font-weight: bold;
+      display: flex;
+      margin-bottom: 1rem;
+      font-size: 20px; }
+      .pricing__body__box--body .description i {
+        font-size: 30px;
+        margin-left: 10px; }
+    .pricing__body__box--body .item {
+      font-size: 17px;
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      color: #1b2437;
+      margin-bottom: 5px; }
+      .pricing__body__box--body .item i {
+        font-size: 24px;
+        margin-right: 12px;
+        align-self: flex-start; }
+  .pricing__body__box--foot {
+    margin: 1.5rem 1.5rem 0; }
+    .pricing__body__box--foot .submit {
+      display: block;
+      text-align: center;
+      margin-bottom: 2rem;
+      width: 100%;
+      font-size: 25px;
+      background: #005e86;
+      padding: 12px 0;
+      color: white;
+      letter-spacing: 1px;
+      transition: all 0.2s linear; }
+      .pricing__body__box--foot .submit:hover {
+        background: #00a5ec; }
+    .pricing__body__box--foot .information {
+      color: #484848;
+      font-size: 15px;
+      font-weight: 500;
+      margin-left: 1rem; }
+      .pricing__body__box--foot .information--warning {
+        margin-bottom: 10px; }
+  @media screen and (max-width: 480px) {
+    .pricing__body__box--head {
+      padding: 0 1rem 1rem; }
+    .pricing__body__box--body .item {
+      font-size: 16px; }
+    .pricing__body__box--foot .submit {
+      font-size: 20px; }
+    .pricing__body__box--foot .information {
+      font-size: 14px; } }
+  @media screen and (max-width: 330px) {
+    .pricing__body__box--head .heading {
+      font-size: 25px; }
+    .pricing__body__box--head .price {
+      font-size: 30px; }
+    .pricing__body__box--body {
+      padding: 1rem 1rem 0; }
+      .pricing__body__box--body .description {
+        font-size: 16px;
+        display: flex; }
+    .pricing__body__box--foot .submit {
+      font-size: 17px; } }

@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto+Slab:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+.footer {
+  background: #1b2437;
+  color: white;
+  list-style: none;
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100vw;
+  overflow: hidden; }
+  @media screen and (max-width: 1250px) {
+    .footer {
+      flex-direction: column;
+      justify-content: center; } }
+
+.footer__pagelink {
+  display: flex;
+  flex-wrap: wrap; }
+  .footer__pagelink .holder {
+    display: grid;
+    width: fit-content;
+    margin: 0 2rem; }
+  .footer__pagelink--link {
+    margin: 5px 0;
+    cursor: pointer;
+    color: #fff; }
+    .footer__pagelink--link:hover {
+      text-decoration: underline; }
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 2rem 4rem 0;
+  justify-content: center; }
+  .footer__socials .holder {
+    display: flex;
+    margin: 1rem 2rem; }
+  .footer__socials--link {
+    font-size: 25px;
+    cursor: pointer;
+    margin: 0px 10px;
+    color: #fff; }
+  .footer__socials .copyright {
+    word-spacing: 2px;
+    min-width: max-content; }
+    @media screen and (max-width: 300px) {
+      .footer__socials .copyright {
+        font-size: 12px; } }

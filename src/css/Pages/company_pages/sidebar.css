@@ -1,0 +1,149 @@
+.sidebar {
+  width: fit-content;
+  background: #ffffff;
+  border-right: 2px solid #c7c7c7;
+  height: 100vh;
+  overflow-y: scroll;
+  min-width: fit-content;
+  transition: all 0.2s linear;
+  z-index: 5; }
+  .sidebar::-webkit-scrollbar {
+    width: 7px; }
+  .sidebar::-webkit-scrollbar-thumb {
+    background: #ffffff; }
+  .sidebar::-webkit-scrollbar-track {
+    background: #fff; }
+  @media screen and (max-width: 1180px) {
+    .sidebar {
+      position: fixed;
+      padding-bottom: 3rem;
+      transform: translateX(-100%); }
+      .sidebar.active {
+        border-right: 2px solid #494949;
+        transform: translateX(0); } }
+  @media screen and (min-width: 1180px) {
+    .sidebar.minimize .divider,
+    .sidebar.minimize .sidebar__link-group--link p,
+    .sidebar.minimize .sidebar__link-group.support,
+    .sidebar.minimize .sidebar__link-group--heading,
+    .sidebar.minimize .sidebar__logo {
+      display: none; }
+    .sidebar.minimize .sidebar__link-group--link {
+      margin: 1rem 0; }
+      .sidebar.minimize .sidebar__link-group--link i {
+        font-size: 40px; } }
+
+.black-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #60606063;
+  z-index: -4; }
+  @media screen and (max-width: 1180px) {
+    .black-screen.active {
+      bottom: 0;
+      right: 0;
+      z-index: 4; } }
+
+.sidebar__logo {
+  padding: 2rem 0 0.5rem;
+  text-align: center; }
+  .sidebar__logo img {
+    width: 150px;
+    height: 70px;
+    object-fit: contain; }
+
+.sidebar__link-group {
+  margin: 2rem 3rem;
+  margin-right: 1rem; }
+  .sidebar__link-group--heading {
+    font-size: 19px;
+    color: #818181; }
+  .sidebar__link-group--link {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border-left: 5px solid transparent;
+    width: 100%;
+    min-width: max-content;
+    margin: 10px 0;
+    padding: 10px 10px;
+    padding-right: 1rem;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+    position: relative;
+    left: -16px;
+    cursor: pointer;
+    transition: all 0.1s linear; }
+    .sidebar__link-group--link i {
+      font-size: 27px;
+      color: #2d2d2d; }
+    .sidebar__link-group--link p {
+      color: #2d2d2d;
+      font-weight: 500;
+      margin-left: 1rem;
+      font-size: 19px; }
+    .sidebar__link-group--link:hover {
+      background-color: #f3f3f3;
+      border-color: #7a7a7a; }
+    .sidebar__link-group--link.active {
+      background: #afdcff65;
+      border-color: #017fe4; }
+      .sidebar__link-group--link.active i,
+      .sidebar__link-group--link.active p {
+        color: #0061af; }
+      .sidebar__link-group--link.active:hover {
+        background-color: #afdcff65;
+        border-color: #017fe4; }
+  @media screen and (max-width: 320px) {
+    .sidebar__link-group {
+      margin: 2rem; } }
+
+.divider {
+  width: 85%;
+  margin: 0 auto; }
+
+.dark-mode {
+  min-width: max-content;
+  display: flex;
+  align-items: center;
+  -webkit-user-select: none;
+  user-select: none; }
+  .dark-mode__info {
+    display: flex;
+    align-items: center; }
+    .dark-mode__info i {
+      font-size: 22px; }
+    .dark-mode__info p {
+      font-size: 19px;
+      margin-left: 1rem; }
+  .dark-mode__switcher {
+    height: 20px;
+    width: 50px;
+    cursor: pointer;
+    background: #e4e4e4;
+    border-radius: 20rem;
+    margin-left: 2rem;
+    outline: 1px solid gray;
+    position: relative;
+    transition: all 0.2s ease-in-out; }
+    .dark-mode__switcher--disc {
+      height: 24px;
+      width: 24px;
+      background: #3e3e3e;
+      border-radius: 50%;
+      position: absolute;
+      left: -1px;
+      z-index: 2;
+      top: -2px;
+      outline: 1px solid;
+      outline-offset: -1px;
+      transition: all 0.2s linear; }
+    .dark-mode__switcher.active {
+      background: #0077c7;
+      outline-color: #e4e4e4; }
+      .dark-mode__switcher.active .dark-mode__switcher--disc {
+        left: unset;
+        right: -1px;
+        background: #e4e4e4;
+        outline-color: #002239; }
